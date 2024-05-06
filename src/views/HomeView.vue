@@ -2,27 +2,26 @@
 import DataService from "../services/dataservice";
 import { ref, onMounted } from "vue";
 
-const kategoriak = ref([]);
-const valamik = ref([]);
-const valasztottKategoriaNev = ref();
+const artists = ref([]);
+const zenek = ref([]);
 const valasztottKategoriaId = ref();
-const kiválasztottValamik = ref([]);
+const kiválasztottZenek = ref([]);
 
 onMounted(() => {
   // Ez akkor fut le, amikor betöltődik a HomeView komponens
 }),
-  DataService.getAllKategoria()
+  DataService.getAllArtists()
     .then((resp) => {
-      kategoriak.value = resp;
+      artists.value = resp;
       //console.log(kategoriak.value);
     })
     .catch((err) => {
       console.log(err);
     });
 
-DataService.getAllValami()
+DataService.getAllZenek()
   .then((resp) => {
-    valamik.value = resp;
+    zenek.value = resp;
     //console.log(valamik.value);
   })
   .catch((err) => {
@@ -30,26 +29,21 @@ DataService.getAllValami()
   });
 
 const valaszto = () => {
-  // Ha a backend-en nincs olyan végpont, ami csak a kiválasztott id-jű elemeket adja vissza,
-  // akkor az összes elemet le kell kérni és kiválogatni közülük a megfelelőket:
-  valasztottKategoriaId.value = kategoriak.value.find(
-    (k) => k.nev === valasztottKategoriaNev.value
-  ).id;
-  console.log(valasztottKategoriaId.value);
-  kiválasztottValamik.value = valamik.value.filter(
-    (v) => v.kategoriaId === valasztottKategoriaId.value
+  kiválasztottZenek.value = zenek.value.filter(
+    (k) => k.ARTIST_ID === valasztottKategoriaId.value
   );
-  console.log(kiválasztottValamik.value);
+  console.log(kiválasztottZenek.value);
 
   // ha van megfelelő végpont (és kellene, hogy legyen) akkor használjuk azt (:
 };
 </script>
 
 <template>
-  <select v-model="valasztottKategoriaNev" @change="valaszto">
-    <option v-for="kategoria in kategoriak">{{ kategoria.nev }}</option>
+  <select v-model="valasztottKategoriaId" @change="valaszto">
+    <option v-for="muvesz in artists" :value="muvesz._id">{{ muvesz.artist }}</option>
   </select>
+{{valasztottKategoriaId}}
   <ul class="m-4">
-    <li v-for="valami in kiválasztottValamik">{{ valami.nev }}</li>
+    <li v-for="zene in kiválasztottZenek">{{ zene.TITLE }}</li>
   </ul>
 </template>
