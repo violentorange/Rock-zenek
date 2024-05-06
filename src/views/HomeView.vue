@@ -43,7 +43,8 @@ const valaszto = () => {
     <option v-for="muvesz in artists" :value="muvesz._id">{{ muvesz.artist }}</option>
   </select>
 {{valasztottKategoriaId}}
+
   <ul class="m-4">
-    <li v-for="zene in kiválasztottZenek">{{ zene.TITLE }}</li>
+    <li v-for="zene in kiválasztottZenek">{{ zene.TITLE }} {{ zene._id }}</li>
   </ul>
 </template>
