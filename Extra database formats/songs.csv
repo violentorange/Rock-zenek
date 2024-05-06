@@ -1,0 +1,101 @@
+_id;TITLE;ARTIST_ID;TIME;BPM;YEAR;GENRE
+1;Satisfaction;60;3:43;134,7;1985;Rock 1980s
+2;Respect;4;2:23;114,5;1967;Rock 1960s
+3;Stairway to Heaven;34;7:59;99,7;1971;Slow
+4;Like a Rolling Stone;9;6:04;95,6;1965;Rock 1960s
+5;Born to Run;12;4:30;146,3;1975;Rock 1970s
+6;Hotel California;55;6:29;147,9;1977;Slow
+7;Light My Fire;54;7:06;125,1;1967;Rock 1960s
+8;Good Vibrations;51;3:36;148,8;1966;Rock 1960s
+9;Hey Jude;52;7:08;146,9;1969;Rock 1960s
+10;Imagine;33;3:02;152,6;1971;Slow
+11;Louie Louie;56;2:42;124;1963;Rock 1960s
+12;Yesterday;52;2:05;97,6;1966;Rock 1960s
+13;My Generation;64;3:17;97,2;1966;Rock 1960s
+14;What's Going On;37;3:47;101,5;1971;Dance 1970s
+15;Johnny B. Goode;18;2:38;84,1;1958;Rock 1950s
+16;Layla;23;7:04;115,2;1972;Rock 1970s
+17;Won't Get Fooled Again;64;3:38;134,9;1971;Rock 1970s
+18;Jailhouse Rock;27;2:27;84,2;1957;Rock 1950s
+19;American Pie;24;8:34;138,2;1971;Slow
+20;A Day in the Life;52;5:06;130,3;1969;Rock 1960s
+21;I Got You (I Feel Good);28;2:45;145,2;1965;Rock 1960s
+22;Superstition;50;4:25;101,3;1972;Disco
+23;I Want to Hold Your Hand;52;2:26;131,1;1966;Rock 1960s
+24;Brown Sugar;60;3:46;128,3;1971;Rock 1970s
+25;Purple Haze;32;2:50;110,2;1968;Rock 1960s
+26;Sympathy for the Devil;60;6:18;116,2;1968;TBD
+27;Bohemian Rhapsody;43;5:53;108;1976;Slow
+28;You Really Got Me;57;2:13;138;1964;Rock 1960s
+29;Oh, Pretty Woman;47;2:57;127,2;1964;Rock 1960s
+30;Bridge Over Troubled Water;48;4:51;87,2;1970;Slow
+31;Hound Dog;27;2:15;88,8;1956;Rock 1950s
+32;Let It Be;52;3:52;137,4;1969;Rock 1960s
+33;(Sittin' On) the Dock of the Bay;40;2:41;103,3;1968;Slow
+34;All Along the Watchtower;32;4:01;114,3;1968;Rock 1960s
+35;Walk This Way;2;3:32;108;1975;Rock 1980s
+36;My Girl;62;2:42;105,1;1965;Slow
+37;Rock Around the Clock;7;2:10;89,9;1955;Rock 1950s
+38;I Heard It Through the Grapevine;37;5:03;118,1;1968;Rock 1960s
+39;Proud Mary;20;3:07;120,4;1968;Rock 1960s
+40;Born to Be Wild;49;3:28;146,9;1968;Rock 1960s
+41;Smells Like Teen Spirit;39;5:01;117,5;1991;Rock 1990s
+42;Every Breath You Take;59;4:13;117,4;1983;Slow
+43;What'd I Say (Parts 1 And 2);44;5:06;89,6;1959;Rock 1950s
+44;Free Bird;36;9:01;149;1975;Slow
+45;That'll Be the Day;13;2:16;116,3;1957;Rock 1950s
+46;Whole Lotta Love;34;5:33;92,1;1969;Rock 1960s
+47;Dream On;2;4:26;156,9;1973;Rock 1980s
+48;California Dreamin';58;2:39;113;1966;Rock 1960s
+49;Brown Eyed Girl;66;3:03;151,1;1967;Rock 1960s
+50;Wild Thing;63;2:35;102,1;1966;Rock 1960s
+51;Suite: Judy Blue Eyes;21;7:29;143;1971;TBD
+52;Beat It;38;4:19;138,6;1983;Dance 1980s
+53;Great Balls of Fire;31;1:51;161,2;1957;Rock 1950s
+54;Stayin' Alive;5;4:43;103,6;1977;Disco
+55;For What It's Worth (Stop, Hey What's That Sound);14;2:38;99,4;1967;Rock 1960s
+56;Blowin' in the Wind;9;2:46;93,8;1967;TBD
+57;Twist And Shout;52;2:32;124,3;1963;Rock 1960s
+58;Piano Man;8;5:37;103,2;1974;Slow
+59;She Loves You;52;2:22;149,8;1966;Rock 1960s
+60;Space Oddity;22;5:10;138,9;1973;Rock 1970s
+61;Strawberry Fields Forever;52;4:08;99,2;1969;Rock 1960s
+62;Kashmir;34;8:32;120,7;1990;Rock 1970s
+63;Crazy;41;2:41;110,8;1961;Country
+64;London Calling;53;3:18;134,3;1979;Rock 1970s
+65;Jumpin' Jack Flash;60;3:40;137,5;1968;Rock 1960s
+66;Rock And Roll;34;3:40;85,4;1971;Rock 1970s
+67;Let's Stay Together;3;3:17;102,2;1971;Slow
+68;All Shook Up;27;2:00;147;1957;Rock 1950s
+69;Maggie May;46;4:58;128,8;1971;Rock 1970s
+70;Your Song;26;4:00;117,9;1970;Slow
+71;Heartbreak Hotel;27;2:09;107,8;1956;Rock 1950s
+72;God Only Knows;51;2:52;116,6;1966;TBD
+73;The Twist;17;2:37;155,5;1961;Rock 1960s
+74;Good Golly Miss Molly;35;2:07;84,4;1958;Rock 1950s
+75;Sunshine of Your Love;19;4:11;115;1968;Rock 1960s
+76;California Girls;51;2:37;115,9;1965;Rock 1960s
+77;Summertime Blues;25;1:59;157,2;1970;Rock 1970s
+78;Blue Suede Shoes;15;2:14;85,9;1956;Rock 1950s
+79;A Hard Day's Night;52;2:34;138,8;1966;Rock 1960s
+80;Fire And Rain;29;3:22;151,7;1970;Slow
+81;Gloria;66;2:36;131,1;1965;Rock 1960s
+82;Sexual Healing;37;3:59;93,9;1982;Slow
+83;Start Me Up;60;3:34;122;1981;TBD
+84;More Than a Feeling;11;4:45;109;1976;Rock 1970s
+85;Roxanne;59;3:11;134,9;1979;Rock 1970s
+86;We Are the Champions;43;2:59;97,5;1977;Slow
+87;Tangled Up in Blue;9;5:43;99,2;1994;TBD
+88;Somebody to Love;30;2:55;131,2;1967;Rock 1960s
+89;Stand by Me;6;2:54;108,9;1961;Slow
+90;Whole Lotta Shakin' Going On;31;2:48;119,2;1957;Dance 1980s
+91;You Shook Me All Night Long;1;3:31;128,2;1980;Rock 1980s
+92;When Doves Cry;42;3:48;126,5;1984;Dance 1980s
+93;In the Midnight Hour;67;2:36;112;1965;Dance 1960s
+94;Gimme Some Lovin';61;2:53;147,5;1967;Rock 1960s
+95;Jump;65;4:02;129,6;1984;Rock 1980s
+96;Thunder Road;12;4:51;144;1975;TBD
+97;No Woman No Cry;10;7:07;157,7;1974;Reggae
+98;La Bamba;45;2:04;151,5;1959;Rock 1950s
+99;We've Only Just Begun;16;3:05;89,6;1970;Easy
+100;Papa Was a Rollin' Stone;62;6:54;121,2;1972;Rock 1970s
