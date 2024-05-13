@@ -1,11 +1,11 @@
 import Axios from "axios";
-Axios.defaults.baseURL = "http://localhost:3000";
+Axios.defaults.baseURL = "http://localhost:8000";
 
 export default {
   getAllArtists() {
-    return Axios.get("/artists")
+    return Axios.get("/api/artists")
       .then((resp) => {
-        //console.log(resp.data);
+        console.log(resp.data);
         return resp.data;
       })
       .catch((err) => {
@@ -14,7 +14,7 @@ export default {
       });
   },
   getAllZenek() {
-    return Axios.get("/songs")
+    return Axios.get("/api/songs")
       .then((resp) => {
         //console.log(resp.data);
         return resp.data;
