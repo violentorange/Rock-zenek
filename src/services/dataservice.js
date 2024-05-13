@@ -5,7 +5,7 @@ export default {
   getAllArtists() {
     return Axios.get("/api/artists")
       .then((resp) => {
-        console.log(resp.data);
+        //console.log(resp.data.data);
         return resp.data;
       })
       .catch((err) => {
@@ -16,7 +16,7 @@ export default {
   getAllZenek() {
     return Axios.get("/api/songs")
       .then((resp) => {
-        //console.log(resp.data);
+        //console.log(resp.data.data);
         return resp.data;
       })
       .catch((err) => {

@@ -12,8 +12,8 @@ onMounted(() => {
 }),
   DataService.getAllArtists()
     .then((resp) => {
-      artists.value = resp;
-      //console.log(kategoriak.value);
+      artists.value = resp.data;
+      //console.log(artists.value);
     })
     .catch((err) => {
       console.log(err);
@@ -21,8 +21,8 @@ onMounted(() => {
 
 DataService.getAllZenek()
   .then((resp) => {
-    zenek.value = resp;
-    //console.log(valamik.value);
+    zenek.value = resp.data;
+    //console.log(zenek.value);
   })
   .catch((err) => {
     console.log(err);
@@ -40,11 +40,9 @@ const valaszto = () => {
 
 <template>
   <select v-model="valasztottKategoriaId" @change="valaszto">
-    <option v-for="muvesz in artists" :value="muvesz._id">{{ muvesz.artist }}</option>
+    <option v-for="muvesz in artists" :value="muvesz.id" >{{ muvesz.artist }}</option>
   </select>
-{{valasztottKategoriaId}}
-
   <ul class="m-4">
-    <li v-for="zene in kiválasztottZenek">{{ zene.TITLE }} {{ zene._id }}</li>
+    <li v-for="zene in kiválasztottZenek">{{ zene.TITLE }}</li>
   </ul>
 </template>
