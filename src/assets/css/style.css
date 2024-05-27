@@ -1,0 +1,16 @@
+.redwide{
+    width: 100%;
+    height: 10px;
+    background-color: red;
+}
+
+.blackwide{
+    width: 100%;
+    height: 10px;
+    background-color: black;
+}
+
+.fullpage{
+    height: 100vh;
+    width: 100%;
+}

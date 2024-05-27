@@ -25,7 +25,9 @@ const ellenor = () => {
 </script>
 
 <template>
-  <div class="container p-5">
+  <div class="container-fluid bg-dark">
+
+    <div class="container p-5 text-white">
     <form class="row g-3" @submit.prevent="onSubmit">
 
       <div class="col-md-12">
@@ -44,10 +46,12 @@ const ellenor = () => {
       </div>
 
       <div class="col-12">
-        <button :disabled="buttonDisabled" @click="ellenor" type="submit" class="btn btn-danger">Register</button>
+        <button :disabled="buttonDisabled" @click="ellenor" type="submit" style="background-color: red;" class="btn btn-danger">Register</button>
       </div>
 
     </form>
     <div class="">{{ error }}</div>
+  </div>
+
   </div>
 </template>

@@ -39,10 +39,14 @@ const valaszto = () => {
 </script>
 
 <template>
+<div class="bg-dark text-white">
+
   <select v-model="valasztottKategoriaId" @change="valaszto">
     <option v-for="muvesz in artists" :value="muvesz.id" >{{ muvesz.artist }}</option>
   </select>
   <ul class="m-4">
-    <li v-for="zene in kiválasztottZenek">{{ zene.TITLE }}</li>
+    <li v-for="zene in kiválasztottZenek">{{ zene.TITLE }} <img :src="zene.IMAGEURL" src="{{('')}}" alt="Image"/></li>
   </ul>
+
+</div>
 </template>

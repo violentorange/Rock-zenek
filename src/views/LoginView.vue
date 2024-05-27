@@ -1,6 +1,6 @@
 <template>
  
-  <div>
+  <div class="bg-dark text-white">
 
     <div class="container p-5">
     <form class="row g-3">
