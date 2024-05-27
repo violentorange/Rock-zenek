@@ -1,5 +1,8 @@
 <template>
-      <div class="container">
+ 
+  <div>
+
+    <div class="container p-5">
     <form class="row g-3">
 
       <div class="col-md-12">
@@ -13,10 +16,12 @@
       </div>
 
       <div class="col-12">
-        <button type="submit" class="btn btn-primary">Log in</button>
+        <button type="submit" class="btn btn-danger">Log in</button>
       </div>
 
     </form>
+  </div>
+
   </div>
   </template>
   

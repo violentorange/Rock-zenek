@@ -25,7 +25,7 @@ const ellenor = () => {
 </script>
 
 <template>
-  <div class="container">
+  <div class="container p-5">
     <form class="row g-3" @submit.prevent="onSubmit">
 
       <div class="col-md-12">
@@ -44,7 +44,7 @@ const ellenor = () => {
       </div>
 
       <div class="col-12">
-        <button :disabled="buttonDisabled" @click="ellenor" type="submit" class="btn btn-primary">Register</button>
+        <button :disabled="buttonDisabled" @click="ellenor" type="submit" class="btn btn-danger">Register</button>
       </div>
 
     </form>
