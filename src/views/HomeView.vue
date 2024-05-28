@@ -39,14 +39,39 @@ const valaszto = () => {
 </script>
 
 <template>
-<div class="bg-dark text-white">
+<div class="container-fluid bg-dark text-white">
+
+<div class="">
+
+<div style="" class="d-flex align-items-center justify-content-center">
 
   <select v-model="valasztottKategoriaId" @change="valaszto">
     <option v-for="muvesz in artists" :value="muvesz.id" >{{ muvesz.artist }}</option>
   </select>
-  <ul class="m-4">
+  <!-- <ul class="m-4">
     <li v-for="zene in kiválasztottZenek">{{ zene.TITLE }} <img :src="zene.IMAGEURL" src="{{('')}}" alt="Image"/></li>
-  </ul>
+  </ul> -->
+
+
+</div>
+
+</div>
+
+<div style="margin-top: 30px;" class="container d-flex justify-content-center">
+
+  <div v-for="zene in kiválasztottZenek" class="card bg-dark m-4" style="width: 18rem;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" class="card-img-top" alt="Couldn't load image.">
+  <div class="card-body">
+    <h5 class="card-title">{{ zene.TITLE }}</h5>
+    <p class="card-text">Műfaj: {{ zene.GENRE }} </p>
+    <p class="card-text">Megjelenés éve: {{ zene.YEAR }} </p>
+    <p class="card-text">Hossz: {{ zene.TIME }} </p>
+    <p class="card-text">Ez egy helyettesítő szöveg.</p>
+    <a href="#" style="background-color: red;" class="btn btn-danger">Vásárlás</a>
+  </div>
+</div>
+
+</div>
 
 </div>
 </template>

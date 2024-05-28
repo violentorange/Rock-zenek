@@ -31,15 +31,15 @@ import { RouterView } from "vue-router";
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
-            <router-link class="nav-link active" to="/">Zenék</router-link>
+            <router-link class="nav-link active fs-4" to="/">Zenék</router-link>
           </li>
           <li class="nav-item">
             <!-- <a class="nav-link" href="#">Link</a> -->
-            <router-link class="nav-link" to="/registration">Regisztráció</router-link>
+            <router-link class="nav-link fs-4" to="/registration">Regisztráció</router-link>
           </li>
           <li class="nav-item">
             <!-- <a class="nav-link" href="#">Link</a> -->
-            <router-link class="nav-link" to="/login">Bejelentkezés</router-link>
+            <router-link class="nav-link fs-4" to="/login">Bejelentkezés</router-link>
           </li>
         </ul>
       </div>
