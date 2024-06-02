@@ -59,8 +59,13 @@ const valaszto = () => {
 
 <div style="margin-top: 30px;" class="container d-flex justify-content-center">
 
-  <div v-for="zene in kiválasztottZenek" class="card bg-dark m-4" style="width: 18rem;">
-  <img :src="zene.IMAGEURL" src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg" class="card-img-top" alt="Couldn't load image.">
+
+  
+  <div   class="container text-center">
+  <div class="row">
+    <div v-for="zene in kiválasztottZenek" class="col-3">
+      <div class="card bg-dark m-4" style="width: 18rem;">
+  <img :src="zene.IMAGEURL" src="" class="card-img-top img-fluid img-thumbnail" alt="Couldn't load image.">
   <div class="card-body">
     <h5 class="card-title">{{ zene.TITLE }}</h5>
     <p class="card-text">Műfaj: {{ zene.GENRE }} </p>
@@ -69,6 +74,10 @@ const valaszto = () => {
     <p class="card-text">Ez egy helyettesítő szöveg.</p>
     <a href="#" style="background-color: red;" class="btn btn-danger">Vásárlás</a>
   </div>
+    </div>
+  </div>
+</div>
+
 </div>
 
 </div>
