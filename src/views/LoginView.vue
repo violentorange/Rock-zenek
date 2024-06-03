@@ -16,7 +16,7 @@
       </div>
 
       <div class="col-12">
-        <button type="submit" style="background-color: red;" class="btn btn-danger">Log in</button>
+        <button type="submit" style="background-color: darkred; border-color: darkred;" class="btn btn-danger">Log in</button>
       </div>
 
     </form>

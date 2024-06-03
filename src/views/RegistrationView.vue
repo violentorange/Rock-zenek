@@ -46,7 +46,7 @@ const ellenor = () => {
       </div>
 
       <div class="col-12">
-        <button :disabled="buttonDisabled" @click="ellenor" type="submit" style="background-color: red;" class="btn btn-danger">Register</button>
+        <button :disabled="buttonDisabled" @click="ellenor" type="submit" style="background-color: darkred; border-color: darkred;" class="btn btn-danger">Register</button>
       </div>
 
     </form>

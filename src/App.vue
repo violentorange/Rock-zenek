@@ -53,9 +53,9 @@ import { RouterView } from "vue-router";
     </div>
 
   </nav>
-  <div class="container-fluid blackwide"></div>
   <div class="container-fluid redwide"></div>
-  <div class="container-fluid blackwide"></div>
+  <div class="container-fluid redwide"></div>
+  <div style="margin-bottom: 50px;" class="container-fluid redwide"></div>
 
   <router-view/>
   <div class="container-fluid bg-dark fullpage"></div>

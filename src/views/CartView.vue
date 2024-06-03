@@ -4,7 +4,7 @@
 
 <div class="container justify-content-center text-center">
 
-    <div class="container text-center cartborder">
+    <div class="container text-center cartborder m-4">
   <div class="row">
     <div class="col-md-4">
       Column

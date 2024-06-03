@@ -72,7 +72,7 @@ const valaszto = () => {
     <p class="card-text">Megjelenés éve: {{ zene.YEAR }} </p>
     <p class="card-text">Hossz: {{ zene.TIME }} </p>
     <p class="card-text">Ez egy helyettesítő szöveg.</p>
-    <a href="#" style="background-color: red;" class="btn btn-danger">Vásárlás</a>
+    <a href="#" style="background-color: darkred; border-color: darkred;" class="btn btn-danger">Kosárba</a>
   </div>
     </div>
   </div>
