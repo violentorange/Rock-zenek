@@ -6,6 +6,9 @@ const artists = ref([]);
 const zenek = ref([]);
 const valasztottKategoriaId = ref();
 const kiválasztottZenek = ref([]);
+const urladd = ref();
+
+urladd.value = "http://127.0.0.1:8000/storage/";
 
 onMounted(() => {
   // Ez akkor fut le, amikor betöltődik a HomeView komponens
@@ -60,19 +63,16 @@ const valaszto = () => {
 <div style="margin-top: 30px;" class="container d-flex justify-content-center">
 
 
-  
   <div   class="container text-center">
   <div class="row">
-    <div v-for="zene in kiválasztottZenek" class="col-3">
+    <div v-for="zene in kiválasztottZenek" class="col-lg-4 col-md-6">
       <div class="card bg-dark m-4" style="width: 18rem;">
-  <img :src="zene.IMAGEURL" src="" class="card-img-top img-fluid img-thumbnail" alt="Couldn't load image.">
+  <img :src="urladd+zene.IMAGEURL" src="" class="card-img-top img-fluid img-thumbnail" alt="Couldn't load image.">
   <div class="card-body">
     <h5 class="card-title">{{ zene.TITLE }}</h5>
     <p class="card-text">Műfaj: {{ zene.GENRE }} </p>
-    <p class="card-text">Megjelenés éve: {{ zene.YEAR }} </p>
-    <p class="card-text">Hossz: {{ zene.TIME }} </p>
     <p class="card-text">Ez egy helyettesítő szöveg.</p>
-    <a href="#" style="background-color: darkred; border-color: darkred;" class="btn btn-danger">Kosárba</a>
+    <a href="#" style="background-color: red;" class="btn btn-danger">Vásárlás</a>
   </div>
     </div>
   </div>
