@@ -65,7 +65,7 @@ const valaszto = () => {
 
   <div   class="container text-center">
   <div class="row">
-    <div v-for="zene in kiválasztottZenek" class="col-lg-4 col-md-6">
+    <div v-for="zene in kiválasztottZenek" class="col-lg-4 col-md-6 col-sm-12">
       <div class="card bg-dark m-4" style="width: 18rem;">
   <img :src="urladd+zene.IMAGEURL" src="" class="card-img-top img-fluid img-thumbnail" alt="Couldn't load image.">
   <div class="card-body">
