@@ -7,6 +7,7 @@ const zenek = ref([]);
 const valasztottKategoriaId = ref();
 const kiválasztottZenek = ref([]);
 const urladd = ref();
+let baseprice = 10000;
 
 urladd.value = "http://127.0.0.1:8000/storage/";
 
@@ -69,8 +70,10 @@ const valaszto = () => {
       <div class="card bg-dark m-4" style="width: 18rem;">
   <img :src="urladd+zene.IMAGEURL" src="" class="card-img-top img-fluid img-thumbnail" alt="Couldn't load image.">
   <div class="card-body">
-    <h5 class="card-title">{{ zene.TITLE }}</h5>
+    <h5 class="card-title">Cím:{{ zene.TITLE }}</h5>
     <p class="card-text">Műfaj: {{ zene.GENRE }} </p>
+    <p class="card-text">Hossz: {{ zene.TIME }} </p>
+    <p class="card-text">Kiadás Éve: {{ zene.YEAR }} </p>
     <p class="card-text">Ez egy helyettesítő szöveg.</p>
     <a href="#" style="background-color: red;" class="btn btn-danger">Vásárlás</a>
   </div>
