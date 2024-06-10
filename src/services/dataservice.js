@@ -24,6 +24,17 @@ export default {
         return Promise.reject(err);
       });
    },
+   getAllCartItems() {
+    return Axios.get("/api/shoppingcart")
+      .then((resp) => {
+        //console.log(resp.data.data);
+        return resp.data;
+      })
+      .catch((err) => {
+        //console.log(err);
+        return Promise.reject(err);
+      });
+   },
   // getValamiById(id) {
   //   return Axios.get(`/valamik/${id}`)
   //     .then((resp) => {
@@ -35,9 +46,10 @@ export default {
   //       return Promise.reject(err);
   //     });
   // },
-  // saveUser(újobjektum) {
-  //   return Axios.post("/valamik", újobjektum).then(() => {});
-  // },
+  PostToCart(újobjektum) {
+    console.log(újobjektum);
+    return Axios.post("/api/shoppingcart", újobjektum).then(() => {});
+  },
   // updateUser(módosítottObjektum, id) {
   //   return Axios.put(`/valamik/${id}`, módosítottObjektum).then(() => {});
   // },

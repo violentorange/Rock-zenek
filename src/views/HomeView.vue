@@ -7,7 +7,8 @@ const zenek = ref([]);
 const valasztottKategoriaId = ref();
 const kiválasztottZenek = ref([]);
 const urladd = ref();
-let baseprice = 10000;
+const NewDisc = ref({});
+const Adatbázisba = ref({});
 
 urladd.value = "http://127.0.0.1:8000/storage/";
 
@@ -31,6 +32,16 @@ DataService.getAllZenek()
   .catch((err) => {
     console.log(err);
   });
+
+  const AddToCart = (id) => {
+    NewDisc.value = kiválasztottZenek.value.find((k) => k.id === id);
+    Adatbázisba.value.song_id = NewDisc.value.id;
+    Adatbázisba.value.user_id = 1;
+    Adatbázisba.value.quantity= "1";
+    DataService.PostToCart(Adatbázisba.value)
+    console.log(NewDisc.value);
+}
+
 
 const valaszto = () => {
   kiválasztottZenek.value = zenek.value.filter(
@@ -70,12 +81,13 @@ const valaszto = () => {
       <div class="card bg-dark m-4" style="width: 18rem;">
   <img :src="urladd+zene.IMAGEURL" src="" class="card-img-top img-fluid img-thumbnail" alt="Couldn't load image.">
   <div class="card-body">
-    <h5 class="card-title">Cím:{{ zene.TITLE }}</h5>
+    <h5 class="card-title">Cím: {{ zene.TITLE }}</h5>
     <p class="card-text">Műfaj: {{ zene.GENRE }} </p>
     <p class="card-text">Hossz: {{ zene.TIME }} </p>
     <p class="card-text">Kiadás Éve: {{ zene.YEAR }} </p>
     <p class="card-text">Ez egy helyettesítő szöveg.</p>
-    <a href="#" style="background-color: red;" class="btn btn-danger">Vásárlás</a>
+    <!-- <a :href="`/cart/`${zene.id}" @click="AddToCart" style="background-color: red;" class="btn btn-danger">Kosárba</a> -->
+    <router-link to="#" @click="AddToCart(zene.id)" style="background-color: red;" class="nav-link fs-4 btn btn-danger">Kosárba</router-link>
   </div>
     </div>
   </div>

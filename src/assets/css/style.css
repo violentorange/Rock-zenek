@@ -33,3 +33,7 @@
 .darkred-border{
     border-color: darkred;
 }
+
+.carticon{
+transform: scale(-1, 1)    
+}

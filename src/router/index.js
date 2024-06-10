@@ -29,7 +29,12 @@ const router = createRouter({
       path: "/cart",
       name: "Cart",
       component: CartView,
-    }
+    },
+    // {
+    //   path: "/cart/:id",
+    //   name: "Cart",
+    //   component: CartView,
+    // }
   ],
   
 });
