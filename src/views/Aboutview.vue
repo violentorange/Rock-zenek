@@ -9,34 +9,61 @@
 
 <template>
 
-Rólunk - Power Chord Vinyls
+<div class="container-fluid">
+    <div class="exo-2 text-white container justify-content-center text-center">
 
-Üdvözlünk a Power Chord Vinyls világában, ahol a rockzene rajongói otthonra találnak! Küldetésünk, hogy a legjobb minőségű rock vinyl lemezeket kínáljuk mind a klasszikus, mind a modern rock szerelmeseinek. Hiszünk abban, hogy a zene igazi élményét a vinyl lemezek nyújtják, amelyek a legjobb hangminőséget és egyedülálló hangulatot biztosítanak.
+        <h1 style="margin-top: -35px;" class="text-darkred">Rólunk</h1> 
+        
+        <h2 class="text-darkred">Power Chord Vinyls</h2>
 
-Kik vagyunk?
+        <p>
+        Üdvözlünk a Power Chord Vinyls világában, ahol a rockzene rajongói otthonra találnak!
+        Küldetésünk, hogy a legjobb minőségű rock vinyl lemezeket kínáljuk mind a klasszikus, mind a modern rock szerelmeseinek. 
+        Hiszünk abban, hogy a zene igazi élményét a vinyl lemezek nyújtják, amelyek a legjobb hangminőséget és egyedülálló hangulatot biztosítanak.
+        </p>
+        
+        <h2 class="text-darkred">Kik vagyunk?</h2>
 
-A Power Chord Vinyls csapata szenvedélyes zenerajongókból áll, akiknek szívügye a rockzene minden ága. Boltunkat azzal a céllal hoztuk létre, hogy egy helyen megtalálhasd kedvenc előadóid lemezeit, legyen szó legendás klasszikusokról vagy a legújabb megjelenésekről.
+        <p>A Power Chord Vinyls csapata szenvedélyes zenerajongókból áll, akiknek szívügye a rockzene minden ága.
+        Boltunkat azzal a céllal hoztuk létre, hogy egy helyen megtalálhasd kedvenc előadóid lemezeit, legyen szó legendás klasszikusokról vagy a legújabb megjelenésekről.
+        </p>
 
-Miért válassz minket?
+        <h2 class="text-darkred">Miért válassz minket?</h2>
 
-Széles kínálat: Boltunkban megtalálhatók a rockzene legnagyobb nevei és a feltörekvő tehetségek is. Mindig igyekszünk frissíteni készletünket, hogy mindig a legújabb és legizgalmasabb lemezeket kínálhassuk.
+        <p>Széles kínálat: Boltunkban megtalálhatók a rockzene legnagyobb nevei és a feltörekvő tehetségek is.
+        Mindig igyekszünk frissíteni készletünket, hogy mindig a legújabb és legizgalmasabb lemezeket kínálhassuk.
+        </p>
 
-Kiváló minőség: Minden lemezünket gondosan válogatjuk, hogy biztosítsuk a legjobb hangminőséget. Szakértőink ellenőrzik a lemezek állapotát, hogy vásárlóink mindig elégedettek legyenek.
+        <p>Kiváló minőség: Minden lemezünket gondosan válogatjuk, hogy biztosítsuk a legjobb hangminőséget.
+        Szakértőink ellenőrzik a lemezek állapotát, hogy vásárlóink mindig elégedettek legyenek.
+        </p>
 
-Szenvedély és szakértelem: Csapatunk minden tagja a rockzene elkötelezett híve, akik örömmel osztják meg tudásukat és ajánlásaikat. Ha tanácsra van szükséged, szívesen segítünk megtalálni az ideális lemezt.
+        <p>Szenvedély és szakértelem: Csapatunk minden tagja a rockzene elkötelezett híve, akik örömmel osztják meg tudásukat és ajánlásaikat.
+        Ha tanácsra van szükséged, szívesen segítünk megtalálni az ideális lemezt.
+        </p>
 
-Közösség: A Power Chord Vinyls több, mint egy üzlet. Egy közösséget építünk, ahol a zenerajongók találkozhatnak, megoszthatják tapasztalataikat és felfedezhetik a rockzene világának újdonságait.
+        <p>Közösség: A Power Chord Vinyls több, mint egy üzlet. 
+        Egy közösséget építünk, ahol a zenerajongók találkozhatnak, megoszthatják tapasztalataikat és felfedezhetik a rockzene világának újdonságait.
+        </p>
 
-Kapcsolat
+        <h2 class="text-darkred">Kapcsolat</h2>
 
-Ha kérdésed van, vagy csak szeretnél többet megtudni rólunk, bátran lépj kapcsolatba velünk az [email címünkön] vagy kövess minket a közösségi média platformjainkon. Iratkozz fel hírlevelünkre is, hogy elsőként értesülhess az új megjelenésekről és különleges ajánlatainkról.
+        <p>Ha kérdésed van, vagy csak szeretnél többet megtudni rólunk, bátran lépj kapcsolatba velünk az [email címünkön] vagy kövess minket a közösségi média platformjainkon. 
+        Iratkozz fel hírlevelünkre is, hogy elsőként értesülhess az új megjelenésekről és különleges ajánlatainkról.
+        </p>
 
-Köszönjük, hogy meglátogattad a Power Chord Vinyls-t! Reméljük, hamarosan találkozunk boltunkban vagy online áruházunkban, és együtt fedezhetjük fel a rockzene varázslatos világát.
+        <p>Köszönjük, hogy meglátogattad a Power Chord Vinyls-t!
+        Reméljük, hamarosan találkozunk boltunkban vagy online áruházunkban, és együtt fedezhetjük fel a rockzene varázslatos világát.
+        </p>
 
-Rock on!
+        <h2 class="text-darkred">Rock on!</h2>
 
-A Power Chord Vinyls csapata
+        <h5 style="font-size: 16px; font-style: italic;" class="justify-content-end text-end text-darkred">A Power Chord Vinyls csapata</h5>
 
+
+    </div>
+</div>
+    
 </template>
 
 

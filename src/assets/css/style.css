@@ -37,3 +37,17 @@
 .carticon{
 transform: scale(-1, 1)    
 }
+
+/*<uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 100 to 900 */
+
+.exo-2 {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 2;
+  font-style: normal;
+}
+
+.text-darkred{
+    color: darkred;
+}

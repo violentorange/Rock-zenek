@@ -3,6 +3,11 @@ import { RouterView } from "vue-router";
 </script>
 
 <template>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
@@ -65,4 +70,6 @@ import { RouterView } from "vue-router";
   <div class="container-fluid bg-dark fullpage"></div>
 </template>
 
-<style scoped></style>
+<style scoped>
+
+</style>
