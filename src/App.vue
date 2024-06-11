@@ -41,6 +41,10 @@ import { RouterView } from "vue-router";
             <!-- <a class="nav-link" href="#">Link</a> -->
             <router-link class="nav-link fs-4" to="/login">Bejelentkezés</router-link>
           </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link" href="#">Link</a> -->
+            <router-link class="nav-link fs-4" to="/about">Rólunk</router-link>
+          </li>
         </ul>
         <router-link class="nav-link fs-4" to="/cart">
 
