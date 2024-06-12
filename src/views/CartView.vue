@@ -27,14 +27,14 @@ onMounted(() => {
       AllCartItems.value = resp.data;
       console.log(AllCartItems.value);
 
-      for (let i = 0; i < AllCartItems.value.length; i++) {
-        let j = 0;
-        while (zenek.value[j].id != AllCartItems.value[i].song_id) {
-          j++;
-        }
-        console.log(zenek.value[j].id);
-        console.log(AllCartItems.value[i].song_id);
-      }
+      // for (let i = 0; i < AllCartItems.value.length; i++) {
+      //   let j = 0;
+      //   while (zenek.value[j].id != AllCartItems.value[i].song_id) {
+      //     j++;
+      //   }
+      //   console.log(zenek.value[j].id);
+      //   console.log(AllCartItems.value[i].song_id);
+      // }
     })
     .catch((err) => {
       console.log(err);
@@ -63,23 +63,23 @@ onMounted(() => {
 
 <template>
   <div class="container-fluid">
-    <div class="container justify-content-center text-center">
+    <div class="container d-flex align-items-center justify-content-center text-center">
       <div class="container text-center m-4">
         <div class="row">
-          <div class="col-md-4 col-sm-6 darkred-border border-danger border">
+          <div class="col-md-2 col-sm-5 darkred-border border-danger border">
             <div
-              v-for="item in cartitems"
-              class="card"
-              style="width: 10rem; height: 10rem"
+              v-for="item in AllCartItems"
+              class="card text-black mt-2 mb-2"
+              style="width: 10rem;"
             >
-              <img src="#" class="card-img-top" alt=" " />
+              <img :src="urladd+item.imageurl" class="card-img-cart d-flex align-items-center ms-auto me-auto mt-1" alt=" " />
               <div class="card-body">
-                <h5 class="card-title">{{ item.TITLE }}</h5>
-                <p class="card-text"></p>
+                <h5 class="card-title text-black">{{ item.songtitle }}</h5>
+                <p class="card-text text-black">{{ item.songprice }} Ft</p>
               </div>
             </div>
           </div>
-          <div class="col-md-8 col-sm-6 darkred-border border-danger border">
+          <div class="col-md-10 col-sm-7 darkred-border border-danger border">
             Column
           </div>
         </div>

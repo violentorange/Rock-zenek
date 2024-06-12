@@ -36,8 +36,10 @@ DataService.getAllZenek()
   const AddToCart = (id) => {
     NewDisc.value = kiválasztottZenek.value.find((k) => k.id === id);
     Adatbázisba.value.song_id = NewDisc.value.id;
+    Adatbázisba.value.songprice = NewDisc.value.PRICE;
+    Adatbázisba.value.imageurl = NewDisc.value.IMAGEURL;
+    Adatbázisba.value.songtitle = NewDisc.value.TITLE;
     Adatbázisba.value.user_id = 1;
-    Adatbázisba.value.quantity= "1";
     DataService.PostToCart(Adatbázisba.value)
     console.log(NewDisc.value);
 }
@@ -78,8 +80,8 @@ const valaszto = () => {
   <div   class="container text-center">
   <div class="row">
     <div v-for="zene in kiválasztottZenek" class="col-lg-4 col-md-6 col-sm-12">
-      <div class="card bg-dark m-4" style="width: 18rem;">
-  <img :src="urladd+zene.IMAGEURL" src="" class="card-img-top img-fluid img-thumbnail" alt="Couldn't load image.">
+      <div class="card bg-dark border border-white border-5 m-4" style="width: 18rem; --bs-white-rgb: 192, 192, 192;">
+  <img :src="urladd+zene.IMAGEURL" src="" class="card-img-top img-fluid " alt="Couldn't load image.">
   <div class="card-body">
     <h5 class="card-title">Cím: {{ zene.TITLE }}</h5>
     <p class="card-text">Műfaj: {{ zene.GENRE }} </p>

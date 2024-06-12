@@ -67,7 +67,7 @@ import { RouterView } from "vue-router";
   <div style="margin-bottom: 50px;" class="container-fluid redwide"></div>
 
   <router-view/>
-  <div class="container-fluid bg-dark fullpage"></div>
+  <!-- <div class="container-fluid bg-dark fullpage"></div> -->
 </template>
 
 <style scoped>

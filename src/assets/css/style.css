@@ -21,6 +21,13 @@
     object-fit: cover;
 }
 
+.card-img-cart {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+
 .cartborder{
 
     border: 1px solid darkred;
