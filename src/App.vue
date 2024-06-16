@@ -40,7 +40,7 @@ import { RouterView } from "vue-router";
           </li>
           <li class="nav-item">
             <!-- <a class="nav-link" href="#">Link</a> -->
-            <router-link class="nav-link fs-4" to="/registration">Regisztráció</router-link>
+            <router-link hidden class="nav-link fs-4" to="/registration">Regisztráció</router-link>
           </li>
           <li class="nav-item">
             <!-- <a class="nav-link" href="#">Link</a> -->
@@ -67,7 +67,16 @@ import { RouterView } from "vue-router";
   <div style="margin-bottom: 50px;" class="container-fluid redwide"></div>
 
   <router-view/>
+  <div class="m-5 container-fluid bg-dark"></div>
   <!-- <div class="container-fluid bg-dark fullpage"></div> -->
+
+  <nav style="background-color: darkred;" class="navbar bg fixed-bottom">
+  <div class="container-fluid d-flex">
+    <a class=" navbar-brand">
+      Power Chord Vinyls
+    </a>
+  </div>
+</nav>
 </template>
 
 <style scoped>

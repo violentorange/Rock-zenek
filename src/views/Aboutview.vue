@@ -58,7 +58,9 @@
 
         <h2 class="text-darkred">Rock on!</h2>
 
-        <h5 style="font-size: 16px; font-style: italic;" class="justify-content-end text-end text-darkred">A Power Chord Vinyls csapata</h5>
+        <h5 style="font-size: 16px; font-style: italic; margin-bottom: 80px;" class="justify-content-end text-end text-darkred">A Power Chord Vinyls csapata</h5>
+
+        <div></div>
 
 
     </div>

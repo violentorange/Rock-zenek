@@ -87,9 +87,8 @@ const valaszto = () => {
     <p class="card-text">Műfaj: {{ zene.GENRE }} </p>
     <p class="card-text">Hossz: {{ zene.TIME }} </p>
     <p class="card-text">Kiadás Éve: {{ zene.YEAR }} </p>
-    <p class="card-text">Ez egy helyettesítő szöveg.</p>
     <!-- <a :href="`/cart/`${zene.id}" @click="AddToCart" style="background-color: red;" class="btn btn-danger">Kosárba</a> -->
-    <router-link to="#" @click="AddToCart(zene.id)" style="background-color: red;" class="nav-link fs-4 btn btn-danger">Kosárba</router-link>
+    <router-link to="#" @click="AddToCart(zene.id)" style="background-color: red;" class="nav-link fs-4 btn btn-danger text-black">Kosárba</router-link>
   </div>
     </div>
   </div>

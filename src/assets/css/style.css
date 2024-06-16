@@ -22,8 +22,8 @@
 }
 
 .card-img-cart {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
 }
 
@@ -57,4 +57,8 @@ transform: scale(-1, 1)
 
 .text-darkred{
     color: darkred;
+}
+
+.darkred{
+    background-color: darkred;
 }
