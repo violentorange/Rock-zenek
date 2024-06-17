@@ -50,6 +50,9 @@ export default {
     console.log(újobjektum);
     return Axios.post("/api/shoppingcart", újobjektum).then(() => {});
   },
+  RegisterUser(newuser) {
+  return Axios.post("/api/register", newuser).then(() => {});
+},
   // updateUser(módosítottObjektum, id) {
   //   return Axios.put(`/valamik/${id}`, módosítottObjektum).then(() => {});
   // },

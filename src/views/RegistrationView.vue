@@ -1,9 +1,11 @@
 <script setup>
 import { ref } from 'vue';
+import DataService from "../services/dataservice";
 
 const userName = ref("")
 const email = ref("")
 const password = ref("")
+const password_confirmation = ref("")
 const error = ref("")
 const buttonDisabled = ref(false)
 
@@ -18,9 +20,25 @@ const ellenor = () => {
  if (password.value.length < 8) {
   error.value = "A jelszó legalább 8 karakter hosszú legyen!"
   buttonDisabled.value = true
+  alert("A jelszó legalább 8 karakter hosszú legyen!");
+  return;
  }
 
+if (password.value!= password_confirmation.value) {
+  error.value = "A jelszavak nem egyeznek!"
+  buttonDisabled.value = true
+  alert("A jelszavak nem egyeznek!");
+  return;
+ }
+
+
+const newuser = {name:userName.value,email:email.value,password:password.value,password_confirmation:password_confirmation.value};
+console.log(userName);
+DataService.RegisterUser(newuser);
+
 }
+
+
 
 </script>
 
@@ -31,7 +49,7 @@ const ellenor = () => {
     <form class="row g-3" @submit.prevent="onSubmit">
 
       <div class="col-md-12">
-        <label for="inputUsername4" class="form-label">Username</label>
+        <label for="inputUsername4" class="form-label">Name</label>
         <input v-model="userName" required type="text" class="form-control" id="inputUsername4" />
       </div>
 
@@ -43,6 +61,11 @@ const ellenor = () => {
       <div class="col-md-6">
         <label for="inputPassword4" class="form-label">Password</label>
         <input @keyup="ell" v-model="password" required type="password" class="form-control" id="inputPassword4" />
+      </div>
+
+      <div class="col-md-6 mx-auto">
+        <label for="inputPassword4" class="form-label">Confirm password</label>
+        <input @keyup="ell" v-model="password_confirmation" required type="password" class="form-control" id="inputPassword4" />
       </div>
 
       <div class="col-12">

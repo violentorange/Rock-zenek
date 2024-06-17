@@ -40,17 +40,24 @@ import { RouterView } from "vue-router";
           </li>
           <li class="nav-item">
             <!-- <a class="nav-link" href="#">Link</a> -->
-            <router-link hidden class="nav-link fs-4" to="/registration">Regisztráció</router-link>
+            <router-link class="nav-link fs-4" to="/about">Rólunk</router-link>
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link" href="#">Link</a> -->
+            <router-link class="nav-link fs-4" to="/registration">Regisztráció</router-link>
           </li>
           <li class="nav-item">
             <!-- <a class="nav-link" href="#">Link</a> -->
             <router-link class="nav-link fs-4" to="/login">Bejelentkezés</router-link>
           </li>
-          <li class="nav-item">
-            <!-- <a class="nav-link" href="#">Link</a> -->
-            <router-link class="nav-link fs-4" to="/about">Rólunk</router-link>
-          </li>
         </ul>
+
+        <div>
+
+          
+
+        </div>
+
         <router-link class="nav-link fs-4" to="/cart">
 
           <svg class="carticon" style="margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" height="64" width="64" viewBox="0 0 576 512">
