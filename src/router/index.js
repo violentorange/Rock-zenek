@@ -4,7 +4,6 @@ import RegistrationView from "../views/RegistrationView.vue";
 import LoginView from "../views/LoginView.vue";
 import CartView from "../views/CartView.vue";
 import Aboutview from "../views/Aboutview.vue";
-import BejelentkezettOldal from "../views/BejelentkezettOldal.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -37,12 +36,6 @@ const router = createRouter({
       name: "About",
       component: Aboutview,
     },
-
-    {
-      path: "/home",
-      name: "Loginolva",
-      component: BejelentkezettOldal,
-    },// Új oldal útvonala a login gombra kattintva
 
     // {
     //   path: "/cart/:id",
