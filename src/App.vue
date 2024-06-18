@@ -77,11 +77,15 @@ import { RouterView } from "vue-router";
   <div class="m-5 container-fluid bg-dark"></div>
   <!-- <div class="container-fluid bg-dark fullpage"></div> -->
 
-  <nav style="background-color: darkred;" class="navbar bg fixed-bottom">
+  <nav style="background-color: darkred; text-transform: uppercase; font-weight: bold;" class="navbar bg fixed-bottom text-black">
   <div class="container-fluid d-flex">
-    <a class=" navbar-brand">
+    <div class="navbar-brand">
       Power Chord Vinyls
-    </a>
+    </div>
+
+    <div style="font-size: 28px;">
+      2024
+    </div>
   </div>
 </nav>
 </template>
