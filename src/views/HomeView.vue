@@ -62,6 +62,8 @@ const valaszto = () => {
 
 <div style="" class="d-flex align-items-center justify-content-center">
 
+  <button type="submit" style="background-color: darkred; border-color: darkred; margin-right: 10px;" class="btn btn-danger">Add new song</button>
+
   <select v-model="valasztottKategoriaId" @change="valaszto">
     <option v-for="muvesz in artists" :value="muvesz.id" >{{ muvesz.artist }}</option>
   </select>

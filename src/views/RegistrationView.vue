@@ -49,7 +49,7 @@ DataService.RegisterUser(newuser);
     <form class="row g-3" @submit.prevent="onSubmit">
 
       <div class="col-md-12">
-        <label for="inputUsername4" class="form-label">Name</label>
+        <label for="inputUsername4" class="form-label">Teljes Név</label>
         <input v-model="userName" required type="text" class="form-control" id="inputUsername4" />
       </div>
 
@@ -59,17 +59,17 @@ DataService.RegisterUser(newuser);
       </div>
 
       <div class="col-md-6">
-        <label for="inputPassword4" class="form-label">Password</label>
+        <label for="inputPassword4" class="form-label">Jelszó</label>
         <input @keyup="ell" v-model="password" required type="password" class="form-control" id="inputPassword4" />
       </div>
 
       <div class="col-md-6 mx-auto">
-        <label for="inputPassword4" class="form-label">Confirm password</label>
+        <label for="inputPassword4" class="form-label">Jelszó megerősítés</label>
         <input @keyup="ell" v-model="password_confirmation" required type="password" class="form-control" id="inputPassword4" />
       </div>
 
       <div class="col-12">
-        <button :disabled="buttonDisabled" @click="ellenor" type="submit" style="background-color: darkred; border-color: darkred;" class="btn btn-danger">Register</button>
+        <button :disabled="buttonDisabled" @click="ellenor" type="submit" style="background-color: darkred; border-color: darkred;" class="btn btn-danger">Regisztrálás</button>
       </div>
 
     </form>

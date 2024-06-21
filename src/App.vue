@@ -58,6 +58,8 @@ import { RouterView } from "vue-router";
 
         </div>
 
+        
+
         <router-link class="nav-link fs-4" to="/cart">
 
           <svg class="carticon" style="margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" height="64" width="64" viewBox="0 0 576 512">

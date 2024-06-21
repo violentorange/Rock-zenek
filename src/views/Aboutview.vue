@@ -1,5 +1,6 @@
 <script setup>
-
+import DataService from "../services/dataservice";
+import { ref, onMounted } from "vue";
 
 
 </script>
@@ -12,7 +13,9 @@
 <div class="container-fluid">
     <div class="exo-2 text-white container justify-content-center text-center">
 
-        <h1 style="margin-top: -35px;" class="text-darkred">Rólunk</h1> 
+        <img src="https://i.ibb.co/b2xP6gR/final-logo.png" alt="" style="width: 256px; height: 256px; margin-top: -50px;">
+
+        <h1 style="margin-top: -20px;" class="text-darkred">Rólunk</h1> 
         
         <h2 class="text-darkred">Power Chord Vinyls</h2>
 
