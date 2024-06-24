@@ -1,4 +1,6 @@
 import Axios from "axios";
+
+
 Axios.defaults.baseURL = "http://localhost:8000";
 
 export default {
@@ -36,10 +38,10 @@ export default {
       });
    },
 
-   getCartItemsOfUser() {
-    return Axios.get("/api/users/{users}/shoppingcart")
+   getCartItemsOfUser(userid) {
+    return Axios.get(`/api/users/${userid}/shoppingcart`)
       .then((resp) => {
-        //console.log(resp.data.data);
+        // console.log(resp.data);
         return resp.data;
       })
       .catch((err) => {
@@ -66,7 +68,9 @@ export default {
   return Axios.post("/api/register", newuser).then(() => {});
 },
 Login(user) {
-  return Axios.post("/api/login", user).then(() => {});
+  return Axios.post("/api/login", user).then((user) => {
+    return user.data.user.id;
+  });
 },
 Logout(user) {
   return Axios.post("/api/logout", user).then(() => {});

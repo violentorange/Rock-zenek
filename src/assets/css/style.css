@@ -78,5 +78,5 @@ transform: scale(-1, 1)
 .user_forms{
     background-color: silver;
     text-align: center;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }

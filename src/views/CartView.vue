@@ -1,12 +1,18 @@
 <script setup>
 import DataService from "../services/dataservice";
 import { ref, onMounted } from "vue";
+import { useLoginStateStore } from "../stores/LoginState_Store";
+
+const loginstate = useLoginStateStore();
 
 const artists = ref([]);
 const zenek = ref([]);
 const urladd = ref();
 const cartitems = ref([]);
-const AllCartItems = ref([]);
+const CartItemsOfUser = ref([]);
+const activeUserId = ref();
+
+activeUserId.value=loginstate.id;
 
 urladd.value = "http://127.0.0.1:8000/storage/";
 
@@ -22,10 +28,10 @@ onMounted(() => {
       console.log(err);
     });
 
-  DataService.getAllCartItems()
+  DataService.getCartItemsOfUser(activeUserId.value)
     .then((resp) => {
-      AllCartItems.value = resp.data;
-      console.log(AllCartItems.value);
+      CartItemsOfUser.value = resp.items;
+      console.log(CartItemsOfUser.value);
 
       // for (let i = 0; i < AllCartItems.value.length; i++) {
       //   let j = 0;
@@ -68,7 +74,7 @@ onMounted(() => {
         <div class="row">
           <div class="col-md-2 col-sm-5">
             <div
-              v-for="item in AllCartItems"
+              v-for="item in CartItemsOfUser"
               class="card text-black mt-2 mb-2"
               style="width: 10rem;"
             >
@@ -82,6 +88,7 @@ onMounted(() => {
           <div class="col-md-10 col-sm-7 justify-content-center align-elements-center">
             
             <div class="container col-md-8 order-md-1">
+              {{ activeUserId }}
           <h4 class="mb-3">Megrendelés</h4>
           <form class="needs-validation" novalidate="">
             <div class="row">
@@ -103,7 +110,7 @@ onMounted(() => {
 
             <div class="mb-3">
               <label for="email">Email <span class="text-muted">(Nem kötelező)</span></label>
-              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <input type="email" class="form-control" id="email" placeholder="valaki@xmail.com">
               <div class="invalid-feedback">
                 Please enter a valid email address for shipping updates.
               </div>
@@ -111,7 +118,7 @@ onMounted(() => {
 
             <div class="mb-3">
               <label for="address">Lakcím</label>
-              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+              <input type="text" class="form-control" id="address" placeholder="1234 Valamilyen utca" required="">
               <div class="invalid-feedback">
                 Please enter your shipping address.
               </div>
@@ -119,7 +126,7 @@ onMounted(() => {
 
             <div class="mb-3">
               <label for="address2">Lakcím 2<span class="text-muted">(Nem kötelező)</span></label>
-              <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+              <input type="text" class="form-control" id="address2" placeholder="Lakás vagy szoba">
             </div>
 
             <div class="row">
