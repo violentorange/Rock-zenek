@@ -62,3 +62,21 @@ transform: scale(-1, 1)
 .darkred{
     background-color: darkred;
 }
+
+.halfwidth{
+    width: 50vw;
+}
+
+.quarterwidth{
+    width: 25vw;
+}
+
+.user_buttons{
+    width: 100px;
+}
+
+.user_forms{
+    background-color: silver;
+    text-align: center;
+    text-transform: capitalize;
+}

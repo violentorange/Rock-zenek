@@ -10,7 +10,7 @@ const error = ref("")
 const buttonDisabled = ref(false)
 
 const ell = () => {
-  console.log("ok");
+  // console.log("ok");
   if (password.value.length >= 8) {
     buttonDisabled.value = false
   }
@@ -45,7 +45,7 @@ DataService.RegisterUser(newuser);
 <template>
   <div class="container-fluid bg-dark">
 
-    <div class="container p-5 text-white">
+    <div class="container p-5 text-black border-white rounded user_forms border border-5" style="--bs-white-rgb: 139, 0, 0;">
     <form class="row g-3" @submit.prevent="onSubmit">
 
       <div class="col-md-12">
@@ -68,12 +68,12 @@ DataService.RegisterUser(newuser);
         <input @keyup="ell" v-model="password_confirmation" required type="password" class="form-control" id="inputPassword4" />
       </div>
 
-      <div class="col-12">
-        <button :disabled="buttonDisabled" @click="ellenor" type="submit" style="background-color: darkred; border-color: darkred;" class="btn btn-danger">Regisztrálás</button>
+      <div class="col-12 d-flex justify-content-center align-items-center">
+        <button :disabled="buttonDisabled" @click="ellenor" type="submit" style="background-color: darkred; border-color: darkred;" class="btn btn-danger text-center">Regisztrálás</button>
       </div>
 
     </form>
-    <div class="">{{ error }}</div>
+    <!-- <div class="">{{ error }}</div> -->
   </div>
 
   </div>
