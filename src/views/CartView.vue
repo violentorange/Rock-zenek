@@ -88,7 +88,7 @@ onMounted(() => {
           <div class="col-md-10 col-sm-7 justify-content-center align-elements-center">
             
             <div class="container col-md-8 order-md-1">
-              {{ activeUserId }}
+              <!-- {{ activeUserId }} -->
           <h4 class="mb-3">Megrendelés</h4>
           <form class="needs-validation" novalidate="">
             <div class="row">

@@ -13,7 +13,7 @@ import { ref, onMounted } from "vue";
 <div class="container-fluid">
     <div class="exo-2 text-white container justify-content-center text-center">
 
-        <img src="https://i.ibb.co/b2xP6gR/final-logo.png" alt="" style="width: 256px; height: 256px; margin-top: -50px;">
+        <img src="final-logo.png" alt="" style="width: 256px; height: 256px; margin-top: -50px;">
 
         <h1 style="margin-top: -20px;" class="text-darkred">Rólunk</h1> 
         

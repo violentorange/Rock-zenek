@@ -35,7 +35,7 @@ const Login = async () => {
         <label for="inputPassword4" class="form-label">Jelszó</label>
         <input required type="password" class="form-control" id="inputPassword4" v-model="user.password"/>
       </div>
-{{ loginstate.id }}
+<!-- {{ loginstate.id }} -->
       <div class="col-12 d-flex  justify-content-center">
         <button @click="Login" style="background-color: darkred; border-color: darkred;" class="btn btn-danger">Bejelentkezés</button>
       </div>

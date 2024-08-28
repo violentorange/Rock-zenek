@@ -1,5 +1,6 @@
 <script setup>
 import { RouterView } from "vue-router";
+
 </script>
 
 <template>
@@ -48,7 +49,7 @@ import { RouterView } from "vue-router";
           </li>
           <li class="nav-item">
             <!-- <a class="nav-link" href="#">Link</a> -->
-            <router-link class="nav-link fs-4" to="/login">Bejelentkezés</router-link>
+            <router-link :hidden="loggedin" class="nav-link fs-4" to="/login">Bejelentkezés</router-link>
           </li>
         </ul>
 

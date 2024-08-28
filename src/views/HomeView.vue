@@ -1,6 +1,9 @@
 <script setup>
 import DataService from "../services/dataservice";
 import { ref, onMounted } from "vue";
+import { useLoginStateStore } from "../stores/LoginState_Store";
+
+const loginstate = useLoginStateStore();
 
 const artists = ref([]);
 const zenek = ref([]);
@@ -9,6 +12,10 @@ const kiválasztottZenek = ref([]);
 const urladd = ref();
 const NewDisc = ref({});
 const Adatbázisba = ref({});
+
+const activeUserId = ref();
+
+activeUserId.value=loginstate.id;
 
 urladd.value = "http://127.0.0.1:8000/storage/";
 
@@ -62,7 +69,7 @@ const valaszto = () => {
 
 <div style="" class="d-flex align-items-center justify-content-center">
 
-  <button type="submit" style="background-color: darkred; border-color: darkred; margin-right: 10px;" class="btn btn-danger">Add new song</button>
+  <!-- <button type="submit" style="background-color: darkred; border-color: darkred; margin-right: 10px;" class="btn btn-danger">Add new song</button> -->
 
   <select v-model="valasztottKategoriaId" @change="valaszto">
     <option v-for="muvesz in artists" :value="muvesz.id" >{{ muvesz.artist }}</option>

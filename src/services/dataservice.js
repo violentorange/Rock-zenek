@@ -64,6 +64,9 @@ export default {
     console.log(újobjektum);
     return Axios.post("/api/shoppingcart", újobjektum).then(() => {});
   },
+  DeleteFromCart(id) {
+    return Axios.delete(`/api/shoppingcart/${id}`).then(() => {});
+  },
   RegisterUser(newuser) {
   return Axios.post("/api/register", newuser).then(() => {});
 },
